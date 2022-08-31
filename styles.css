@@ -1,0 +1,104 @@
+* {
+  /* outline: 1px dotted red; */
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header,
+.mainbox {
+  flex-flow: column;
+}
+.mainbox {
+  background-color: #eeeeee;
+  padding: 10px;
+  margin: 20px 0;
+}
+.mainbox > * {
+  padding: 10px 0;
+}
+.mainbox h4,
+.mainbox h3 {
+  text-align: center;
+}
+.mainbox img {
+  height: 200px;
+  border-radius: 50%;
+}
+.top {
+  background-color: #9fc5f8;
+  padding: 10px 20%;
+}
+header,
+main,
+.top,
+footer,
+.topbox,
+.btm,
+.btm div,
+.top ul div,
+.mainbox,
+.tempcontainer {
+  display: flex;
+}
+.top h1 {
+  flex: 4;
+}
+.topbox,
+main,
+.tempcontainer {
+  justify-content: space-around;
+}
+.topbox {
+  flex: 6;
+}
+.topbox h2 {
+  color: white;
+}
+.btm {
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+  margin: 20px 20%;
+  padding: 0 0 10px 0;
+}
+.btm label {
+  display: block;
+}
+/* body */
+main,
+footer,
+.tempcontainer {
+  align-items: center;
+}
+main,
+footer {
+  margin: 5px 20%;
+}
+.tempcontainer .tempred,
+.tempcontainer .tempblue {
+  color: red;
+  font-weight: bold;
+}
+.tempcontainer .tempblue {
+  color: blue;
+}
+/* footer */
+footer {
+  border: 4px solid black;
+  background-color: #eeeeee;
+  justify-content: center;
+  padding: 10px;
+}
+.footbox {
+  flex: 1;
+  position: static;
+}
+.footbox button {
+  background-color: #9fc5f8;
+  padding: 5px 20px;
+  font-weight: bolder;
+  box-shadow: 4px 4px black;
+}
+.footbox2 {
+  flex: 5;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h1>Dojo Weather</h1>
+            <div class="topbox">
+                <h2 onclick="alert('Loading Weather report')">BurBank</h2>
+                <h2 onclick="alert('Loading Weather report')">Chicago</h2>
+                <h2 onclick="alert('Loading Weather report')">Dallas</h2>
+            </div>
+        </div>
+        <div class="btm">
+            <h2>San Jose</h2>
+            <div>
+                <label for="navbar">show tempreture in</label>
+                <select name="navbar" id="navbar" onchange="chDeg(value)">
+                    <option value="cil" id="cil">°C</option>
+                    <option value="feh" id="feh">°F</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <main>
+        <article class="mainbox">
+            <h3>Today</h3>
+            <img src="assets/some_rain.png" alt="somerain">
+            <h4>some rain</h4>
+            <div class="tempcontainer">
+                <div id="t1" class="tempred"><span class="tt1">75</span>°</div>
+                <div id="t2" class="tempblue"><span class="tt2">65</span>°</div>
+            </div>
+        </article>
+        <article class="mainbox">
+            <h3>Tomorrow</h3>
+            <img src="assets/some_sun.png" alt="somerain">
+            <h4>some sun</h4>
+            <div class="tempcontainer">
+                <div id="t3" class="tempred"><span class="tt3">80</span>°</div>
+                <div id="t4" class="tempblue"><span class="tt4">66</span>°</div>
+            </div>
+        </article>
+        <article class="mainbox">
+            <h3>Friday</h3>
+            <img src="assets/some_clouds.png" alt="somerain">
+            <h4>some clouds</h4>
+            <div class="tempcontainer">
+                <div id="t5" class="tempred"><span class="tt5">69</span>°</div>
+                <div id="t6" class="tempblue"><span class="tt6">61</span>°</div>
+            </div>
+        </article>
+        <article class="mainbox">
+            <h3>Saturday</h3>
+            <img src="assets/some_sun.png" alt="somerain">
+            <h4>some sun</h4>
+            <div class="tempcontainer">
+                <div id="t7" class="tempred"><span class="tt7">78</span>°</div>
+                <div id="t8" class="tempblue"><span class="tt8">70</span>°</div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footbox">
+            <img src="assets/cookie.png" alt="logo">
+        </div>
+        <div class="footbox2">
+            <h3>Stop! Cookie Time</h3>
+            <p>We use cookies (sadly not the edible) to personalize
+                <br>content and ads, to provide social media feature and to
+                <br>analyze our traffic. <a href="">Read More</a>
+            </p>
+        </div>
+        <div class="footbox">
+            <button onclick="hideFoot()">I Accept</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
