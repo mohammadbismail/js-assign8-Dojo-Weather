@@ -1,8 +1,8 @@
 var foot = document.querySelector("footer");
-var deg = document.querySelectorAll("#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8");
+// var deg = document.querySelectorAll("#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8");
 var cil = document.getElementById("cil");
 var feh = document.getElementById("feh");
-var currval = [
+var currDeg = [
   document.querySelector(".tt1").innerHTML,
   document.querySelector(".tt2").innerHTML,
   document.querySelector(".tt3").innerHTML,
@@ -12,9 +12,6 @@ var currval = [
   document.querySelector(".tt7").innerHTML,
   document.querySelector(".tt8").innerHTML,
 ];
-var temparr = [];
-console.log(currval);
-
 function hideFoot() {
   foot.remove();
 }
@@ -27,9 +24,10 @@ function changeToF(input) {
   return f;
 }
 function chDeg(value) {
-  if (value == "cil"){
-  for (var j=0;j<currval.length-1;i++){
-  if (arr[i] == 0) {
-    temparr[i] = changeToC(currval[j]);
-  }
+  if (value == "cil")
+    for (var i = 1; i < currDeg.length; i++)
+      document.querySelector(".tt" + i).innerHTML = changeToF(currDeg[i - 1]);
+  else if (value == "feh")
+    for (var j = 1; j < currDeg.length; j++)
+      document.querySelector(".tt" + j).innerHTML = changeToC(currDeg[j - 1]);
 }
