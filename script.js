@@ -12,9 +12,11 @@ function alerting() {
 function changeToC(input) {
   return (input - 32) * 0.5556;
 }
+// console.log(changeToC(60));
 function changeToF(input) {
   return input * (9 / 5) + 32;
 }
+// console.log(changeToC(100));
 function chDeg(value) {
   if (value == "cil")
     for (var i = 1; i < currDeg.length; i++)
